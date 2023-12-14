@@ -26,8 +26,8 @@ export default function Header() {
     }
 
     return (
-        <nav className={`${isOpen ? '' : 'sticky'} bg-white z-30 w-full top-0 px-4 py-5 md:bg-transparent`}>
-            <div className="flex items-center space-x-10 justify-between md:container md:w-5/6 md:mx-auto">
+        <nav className={`${isOpen ? '' : 'sticky'} bg-white z-30 w-full top-0 px-4 py-5 md:bg-transparent lg:px-12`}>
+            <div className="flex items-center space-x-10 justify-between">
                 <Link href="/">
                     <Image src={logo} alt="Site Icon" className='w-[6rem] h-[3rem]' placeholder="blur" />
                 </Link>
