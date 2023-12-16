@@ -89,7 +89,6 @@ export default function Header() {
 
                         <Link onClick={() => { handleOpen(); handleHidden() }} href="/ministries">Ministries</Link>
                         <Link onClick={() => { handleOpen(); handleHidden() }} href="/resources">Resources</Link>
-
                         <Link onClick={() => { handleOpen(); handleHidden() }} href="/contact">Contact Us</Link>
                     </div>
                 </div>
