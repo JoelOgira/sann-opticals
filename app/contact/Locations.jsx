@@ -20,9 +20,10 @@ const Locations = () => {
             <p>+254721520641</p>
           </div>
 
-          <div className="flex flex-col space-y-2 [&>h4]:font-semibold [&>h4]:font-lg [&>p]:text-gray-600 pb-8 border-b">
+          <div className="flex flex-col space-y-2 [&>h4]:font-semibold [&>h4]:font-lg [&>p]:text-gray-600 pb-8 [&>p]:max-w-xs border-b">
             <h4>02. Kilifi Office </h4>
-            <p>Box 42825 - 80100 Digo Rd, Mombasa</p>
+            <p>Box 42825 - 80100, Mombasa</p>
+            <p>Digo Road, Pension Towers 2nd floor</p>
             <p>+254721520641</p>
           </div>
 
@@ -41,7 +42,7 @@ const Locations = () => {
         <p className="flex space-x-3 items-center pt-5">
           <span> <MdEmail className='text-xl text-primary' /> </span>
           <span>
-            info@sannopticals.co.ke
+            sannopticals@gmail.com
           </span>
         </p>
 
@@ -54,32 +55,32 @@ const Locations = () => {
         <div className="flex flex-col space-y-3">
           <div className="flex justify-between items-center py-2 border-b">
             <p>Monday</p>
-            <p>8 AM - 5 PM</p>
+            <p>8 AM - 5:30 PM</p>
           </div>
 
           <div className="flex justify-between items-center py-2 border-b">
             <p>Tuesday</p>
-            <p>8 AM - 5 PM</p>
+            <p>8 AM - 5:30 PM</p>
           </div>
 
           <div className="flex justify-between items-center py-2 border-b">
             <p>Wednesday</p>
-            <p>8 AM - 5 PM</p>
+            <p>8 AM - 5:30 PM</p>
           </div>
 
           <div className="flex justify-between items-center py-2 border-b">
             <p>Thursday</p>
-            <p>8 AM - 5 PM</p>
+            <p>8 AM - 5:30 PM</p>
           </div>
 
           <div className="flex justify-between items-center py-2 border-b">
             <p>Friday</p>
-            <p>8 AM - 5 PM</p>
+            <p>8 AM - 5:30 PM</p>
           </div>
 
           <div className="flex justify-between items-center py-2 border-b">
             <p>Saturday</p>
-            <p>9 AM - 3 PM</p>
+            <p>8 AM - 3 PM</p>
           </div>
           <p className='text-red-400 pt-3'>Closed on Sunday and Public Holidays</p>
         </div>
