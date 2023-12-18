@@ -1,5 +1,8 @@
 import { TbLocationPin } from 'react-icons/tb'
-import { MdEmail, MdLocalPhone } from 'react-icons/md'
+import { MdEmail, MdLocalPhone, MdLocationOn } from 'react-icons/md'
+import { GiPostOffice } from 'react-icons/gi'
+import { openingTime } from './import'
+import { locations } from './import'
 
 const Locations = () => {
   return (
@@ -14,35 +17,33 @@ const Locations = () => {
         </h3>
 
         <div className="grid grid-cols gap-3 pt-8 [&>div]:w-full sm:grid-cols-2">
-          <div className="flex flex-col space-y-2 [&>h4]:font-semibold [&>h4]:font-lg [&>p]:text-gray-600 pb-8 border-b">
-            <h4>01. Head Office in Mombasa</h4>
-            <p>Box 42825 - 80100 Digo Rd, Mombasa</p>
-            <p>+254721520641</p>
-          </div>
 
-          <div className="flex flex-col space-y-2 [&>h4]:font-semibold [&>h4]:font-lg [&>p]:text-gray-600 pb-8 [&>p]:max-w-xs border-b">
-            <h4>02. Kilifi Office </h4>
-            <p>Box 42825 - 80100, Mombasa</p>
-            <p>Digo Road, Pension Towers 2nd floor</p>
-            <p>+254721520641</p>
-          </div>
+          {(locations || []).map(location => (
+            <div key={location?.id} className="flex flex-col space-y-2 [&>h4]:font-semibold [&>h4]:font-lg [&>p]:text-gray-600 pb-8 [&>p]:max-w-xs border-b">
+              <h4>0{location?.id}. {location?.title}</h4>
+              <p className='flex items-center space-x-2'>
+                <span><MdLocationOn /></span>
+                <span>{location?.street}</span>
+              </p>
+              <p className='flex items-center space-x-2'>
+                <span><MdLocalPhone /></span>
+                <span>{location?.tel}</span>
+              </p>
+            </div>
+          ))}
 
-          <div className="flex flex-col space-y-2 [&>h4]:font-semibold [&>h4]:font-lg [&>p]:text-gray-600 pb-8 border-b">
-            <h4>03. Voi Office</h4>
-            <p>Box 42825 - 80100 Digo Rd, Mombasa</p>
-            <p>+254721520641</p>
-          </div>
-
-          <div className="flex flex-col space-y-2 [&>h4]:font-semibold [&>h4]:font-lg [&>p]:text-gray-600 pb-8 border-b">
-            <h4>04. Mpeketoni Office</h4>
-            <p>Box 42825 - 80100 Digo Rd, Mombasa</p>
-            <p>+254721520641</p>
-          </div>
         </div>
         <p className="flex space-x-3 items-center pt-5">
           <span> <MdEmail className='text-xl text-primary' /> </span>
           <span>
             sannopticals@gmail.com
+          </span>
+        </p>
+
+        <p className="flex space-x-3 items-center pt-5">
+          <span> <GiPostOffice className='text-xl text-primary' /> </span>
+          <span>
+            Box 42825 - 80100, Mombasa
           </span>
         </p>
 
@@ -53,35 +54,12 @@ const Locations = () => {
           Opening Hours
         </p>
         <div className="flex flex-col space-y-3">
-          <div className="flex justify-between items-center py-2 border-b">
-            <p>Monday</p>
-            <p>8 AM - 5:30 PM</p>
-          </div>
-
-          <div className="flex justify-between items-center py-2 border-b">
-            <p>Tuesday</p>
-            <p>8 AM - 5:30 PM</p>
-          </div>
-
-          <div className="flex justify-between items-center py-2 border-b">
-            <p>Wednesday</p>
-            <p>8 AM - 5:30 PM</p>
-          </div>
-
-          <div className="flex justify-between items-center py-2 border-b">
-            <p>Thursday</p>
-            <p>8 AM - 5:30 PM</p>
-          </div>
-
-          <div className="flex justify-between items-center py-2 border-b">
-            <p>Friday</p>
-            <p>8 AM - 5:30 PM</p>
-          </div>
-
-          <div className="flex justify-between items-center py-2 border-b">
-            <p>Saturday</p>
-            <p>8 AM - 3 PM</p>
-          </div>
+          {(openingTime || []).map((openTime, index) => (
+            <div key={index} className="flex justify-between space-x-6 items-center py-2 border-b">
+              <p>{openTime?.Day}</p>
+              <p>{openTime?.Time}</p>
+            </div>
+          ))}
           <p className='text-red-400 pt-3'>Closed on Sunday and Public Holidays</p>
         </div>
       </div>

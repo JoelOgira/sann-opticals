@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { useState } from 'react'
 import Image from 'next/image'
-import logo from '../../public/logo.webp'
+import logo from '../../public/logo.svg'
 import { MdOutlineKeyboardArrowUp } from 'react-icons/md'
 import { MdOutlineKeyboardArrowDown } from 'react-icons/md'
 
@@ -29,7 +29,7 @@ export default function Header() {
         <nav className={`${isOpen ? '' : 'sticky'} bg-white z-30 w-full top-0 px-4 py-5 md:bg-transparent lg:px-12`}>
             <div className="flex items-center space-x-10 justify-between">
                 <Link href="/">
-                    <Image src={logo} alt="Site Icon" className='w-[6rem] h-[3rem]' placeholder="blur" />
+                    <Image src={logo} alt="Site Icon" className='w-[8rem] h-[4rem]' />
                 </Link>
 
                 <div className="hidden [&>a]:font-semibold [&>div>div>span]:font-semibold [&>div>div>div>a]:font-semibold md:flex md:flex-wrap md:items-center md:justify-center space-x-5">

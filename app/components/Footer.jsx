@@ -1,5 +1,7 @@
 import { MdEmail, MdLocalPhone, MdLocationOn, MdFacebook } from 'react-icons/md'
+import { FaLongArrowAltRight } from 'react-icons/fa'
 import Link from 'next/link'
+import { locations } from '../contact/import'
 
 const Footer = () => {
 
@@ -19,10 +21,9 @@ const Footer = () => {
               <p className="flex space-x-3">
                 <span> <MdLocalPhone className='text-xl' /> </span>
                 <span className="flex flex-col space-y-2">
-                  <span>Mombasa: +254721520641</span>
-                  <span>Kilifi: +254705473800</span>
-                  <span>Voi: +25471234567</span>
-                  <span>Mtito: +25471234567</span>
+                  {(locations || []).map(location => (
+                    <span key={location.id} className="flex items-center" >{location?.title} -- {location?.tel}</span>
+                  ))}
                 </span>
               </p>
 
