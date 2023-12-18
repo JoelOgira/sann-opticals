@@ -2,9 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-body, html {
+body,
+html {
   min-height: 100svh;
-  @apply bg-gradient-to-r from-blue-100 via-white to-white
+  @apply bg-gradient-to-r from-red-100 via-white to-white
 }
 
 /* ***********  Hamburger menu  ************* */
@@ -67,4 +68,3 @@ body, html {
 }
 
 /* ***********  Contact  ************* */
-
