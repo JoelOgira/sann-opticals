@@ -1,5 +1,4 @@
 import { MdEmail, MdLocalPhone, MdLocationOn, MdFacebook } from 'react-icons/md'
-import { FaLongArrowAltRight } from 'react-icons/fa'
 import Link from 'next/link'
 import { locations } from '../contact/import'
 
@@ -11,7 +10,7 @@ const Footer = () => {
     <footer className="top-full sticky">
       <div className="flex flex-col lg:flex-row text-white">
 
-        <div className="bg-primary px-4 py-10 lg:px-12 lg:w-1/4 lg:py-20">
+        <div className="bg-primary px-4 py-10 lg:px-12 lg:w-1/3 lg:py-20">
           <div className="">
             <h4 className="text-2xl font-bold pb-6">
               Sann Opticals limited
@@ -45,7 +44,7 @@ const Footer = () => {
 
         </div>
 
-        <div className="bg-black [&>div]:px-4  py-10 lg:w-3/4 lg:py-20 lg:px-12">
+        <div className="bg-black [&>div]:px-4  py-10 lg:w-2/3 lg:py-20 lg:px-12">
           <div className="">
             <div className="grid grid-cols gap-y-10 pb-8 [&>div]:flex [&>div]:flex-col md:grid-cols-3 md:gap-y-0 lg:pb-12">
               <div className='flex flex-col space-y-3'>
