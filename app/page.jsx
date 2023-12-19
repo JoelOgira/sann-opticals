@@ -1,8 +1,10 @@
-import Insurance from "./components/Insurance";
+import Insurance from "./components/home/Insurance"
+import EmblaCarousel from "./components/home/EmblaCarousel"
 
 export default function Home() {
   return (
-    <main className='min-h-[dvh]' >
+    <main >
+      <EmblaCarousel />
       <Insurance />
     </main>
   )
