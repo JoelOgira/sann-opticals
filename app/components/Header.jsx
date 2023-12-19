@@ -34,7 +34,7 @@ export default function Header() {
 
                 <div className="hidden [&>a]:font-semibold [&>div>div>span]:font-semibold [&>div>div>div>a]:font-semibold md:flex md:flex-wrap md:items-center md:justify-center space-x-5">
                     <Link href="/" className="hover:text-gray-400">Home</Link>
-
+                    <Link href="/services" className="hover:text-gray-400">Services</Link>
                     <div onMouseEnter={handleAbout} onMouseLeave={handleAbout} onClick={handleAbout} className="cursor-pointer z-30">
                         <div className="hover:text-gray-400 flex items-center space-x-1">
                             <span>About Us</span>
