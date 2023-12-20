@@ -33,26 +33,23 @@ export default function Header() {
                 </Link>
 
                 <div className="hidden [&>a]:font-semibold [&>div>div>span]:font-semibold [&>div>div>div>a]:font-semibold md:flex md:flex-wrap md:items-center md:justify-center space-x-5">
-                    <Link href="/" className="hover:text-gray-400">Home</Link>
-                    <Link href="/services" className="hover:text-gray-400">Services</Link>
+                    <Link href="/" className="hover:text-lightBlue">Home</Link>
+                    <Link href="/services" className="hover:text-lightBlue">Services</Link>
                     <div onMouseEnter={handleAbout} onMouseLeave={handleAbout} onClick={handleAbout} className="cursor-pointer z-30">
-                        <div className="hover:text-gray-400 flex items-center space-x-1">
+                        <div className="hover:text-lightBlue flex items-center space-x-1">
                             <span>About Us</span>
                             <span>{isAboutClosed ? <MdOutlineKeyboardArrowDown /> : <MdOutlineKeyboardArrowUp />}</span>
                         </div>
                         {isAboutClosed ? '' :
                             <div className="z-50">
-                                <div className="bg-white absolute pr-9 pl-3 py-3 flex flex-col space-y-3 shadow-md hover:[&>a]:text-gray-400">
+                                <div className="bg-white absolute pr-9 pl-3 py-3 flex flex-col space-y-3 shadow-md hover:[&>a]:text-lightBlue">
                                     <Link onClick={handleAbout} href="/about/our-church" >Our Church</Link>
                                     <Link onClick={handleAbout} href="/about/our-beliefs" >Our Beliefs</Link>
                                 </div>
                             </div>}
                     </div>
-
-                    <Link href="/ministries" className="hover:text-gray-400">Ministries</Link>
-                    <Link href="/resources" className="hover:text-gray-400">Resources</Link>
-
-                    <Link href="/contact" className="hover:text-gray-400">Contact Us</Link>
+                    <Link href="/services" className="hover:text-lightBlue">Services</Link>
+                    <Link href="/contact" className="hover:text-lightBlue">Contact Us</Link>
                 </div>
 
                 <button
@@ -80,15 +77,13 @@ export default function Header() {
                             </div>
                             {isAboutClosed ? '' :
                                 <div className="z-50">
-                                    <div className="text-gray-200 relative pt-2 flex flex-col space-y-4 [&>a]:border-b [&>a]:pb-2 hover:[&>a]:border-gray-400">
-                                        <Link onClick={() => { handleOpen(); handleHidden() }} href="/about/our-church" >Our Church</Link>
-                                        <Link onClick={() => { handleOpen(); handleHidden() }} href="/about/our-beliefs" >Our Beliefs</Link>
+                                    <div className="relative pt-2 flex flex-col space-y-4 [&>a]:border-b [&>a]:pb-2 hover:[&>a]:border-lightBlue">
+                                        <Link onClick={() => { handleOpen(); handleHidden() }} href="/about/our-church" >Our Company</Link>
+                                        <Link onClick={() => { handleOpen(); handleHidden() }} href="/about/our-beliefs" >Our Branches</Link>
                                     </div>
                                 </div>}
                         </div>
-
-                        <Link onClick={() => { handleOpen(); handleHidden() }} href="/ministries">Ministries</Link>
-                        <Link onClick={() => { handleOpen(); handleHidden() }} href="/resources">Resources</Link>
+                        <Link href="/servies" className="hover:text-lightBlue">Servies</Link>
                         <Link onClick={() => { handleOpen(); handleHidden() }} href="/contact">Contact Us</Link>
                     </div>
                 </div>
