@@ -6,8 +6,8 @@ import { locations } from './import'
 
 const Locations = () => {
   return (
-    <div className="flex flex-col sm:flex-row sm:space-x-3">
-      <div className="bg-[#F5F9F9] py-24 px-4 sm:w-2/3 lg:px-12">
+    <div className="flex flex-col md:flex-row md:space-x-3">
+      <div className="bg-[#F5F9F9] py-24 px-4 md:w-2/3 lg:px-12">
         <h2 className="text-primary flex items-center space-x-3 font-semibold pb-5">
           <span> <TbLocationPin className='text-lg' /> </span>
           <span>OUR LOCATION</span>
@@ -49,7 +49,7 @@ const Locations = () => {
 
       </div>
 
-      <div className="bg-white px-4 py-12 sm:w-1/3 sm:py-24 lg:px-12">
+      <div className="bg-white px-4 py-12 md:w-1/3 md:py-24 lg:px-12">
         <p className="font-semibold font-xl pb-5">
           Opening Hours
         </p>
