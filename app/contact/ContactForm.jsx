@@ -3,7 +3,7 @@
 import { useForm } from 'react-hook-form'
 import { object, string } from 'yup'
 import { yupResolver } from '@hookform/resolvers/yup'
-import ButtonSubmit from '../utils/ButtonSubmit'
+import ButtonSubmit from '../components/ButtonSubmit'
 // import emailjs from '@emailjs/browser'
 
 const ContactForm = () => {
