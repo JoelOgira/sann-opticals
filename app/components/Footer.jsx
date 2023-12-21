@@ -29,7 +29,7 @@ const Footer = () => {
               <p className="flex space-x-3 items-center">
                 <span> <MdEmail className='text-xl' /> </span>
                 <span>
-                  info@sannopticals.co.ke
+                  sannopticals@gmail.com
                 </span>
               </p>
 
@@ -48,16 +48,18 @@ const Footer = () => {
           <div className="">
             <div className="grid grid-cols gap-y-10 pb-8 [&>div]:flex [&>div]:flex-col md:grid-cols-3 md:gap-y-0 lg:pb-12">
               <div className='flex flex-col space-y-3'>
-                <Link className='text-xl font-semibold pb-4' href={'/'}>Our company</Link>
+                <path className='text-xl font-semibold pb-4'>Our company</path>
+                <Link href={'/'}>Home</Link>
                 <Link href={'/about'}>About</Link>
                 <Link href={'/services'}>Services</Link>
                 <Link href={'/contact'}>Contact</Link>
               </div>
 
               <div className='flex flex-col space-y-3'>
-                <Link className='text-xl font-semibold pb-4' href={'/'}>Quick Links</Link>
+                <p className='text-xl font-semibold pb-4' >Quick Links</p>
                 <Link href={'/about'}>About</Link>
                 <Link href={'/services'}>Services</Link>
+                <Link href={'/services'}>Products</Link>
                 <Link href={'/contact'}>Contact</Link>
               </div>
 
