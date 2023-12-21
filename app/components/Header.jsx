@@ -66,7 +66,7 @@ export default function Header() {
             </div>
 
             <div className="md:hidden">
-                <div id="menu" className={`flex-col ${isHidden ? 'hidden' : 'flex'} absolute place-items-start self-end py-8 mt-4 bg-white sm:w-auto sm:self-center left-0 right-0 drop-shadow-md`}>
+                <div id="menu" className={`flex-col ${isHidden ? 'hidden' : 'flex'} absolute place-items-start self-end py-8 bg-white bg-opacity-95 sm:w-auto sm:self-center left-0 right-0 drop-shadow-md`}>
                     <div className="mr-auto flex flex-col space-y-6 pl-4">
                         <Link onClick={() => { handleOpen(); handleHidden() }} href="/">Home</Link>
 
