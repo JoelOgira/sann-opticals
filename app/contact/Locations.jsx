@@ -22,11 +22,11 @@ const Locations = () => {
             <div key={location?.id} className="flex flex-col space-y-2 [&>h4]:font-semibold [&>h4]:font-lg [&>p]:text-gray-600 pb-8 [&>p]:max-w-xs border-b">
               <h4>0{location?.id}. {location?.title}</h4>
               <p className='flex items-center space-x-2'>
-                <span><MdLocationOn /></span>
+                <span className='text-brightRed'><MdLocationOn /></span>
                 <span>{location?.street}</span>
               </p>
               <p className='flex items-center space-x-2'>
-                <span><MdLocalPhone /></span>
+                <span className='text-brightRed'><MdLocalPhone /></span>
                 <span>{location?.tel}</span>
               </p>
             </div>
@@ -34,14 +34,14 @@ const Locations = () => {
 
         </div>
         <p className="flex space-x-3 items-center pt-5">
-          <span> <MdEmail className='text-xl text-primary' /> </span>
+          <span> <MdEmail className='text-xl text-brightRed' /> </span>
           <span>
             sannopticals@gmail.com
           </span>
         </p>
 
         <p className="flex space-x-3 items-center pt-5">
-          <span> <GiPostOffice className='text-xl text-primary' /> </span>
+          <span> <GiPostOffice className='text-xl text-brightRed' /> </span>
           <span>
             Box 42825 - 80100, Mombasa
           </span>
