@@ -73,13 +73,13 @@ export default function Header() {
                         <div onClick={handleAbout} className="cursor-pointer">
                             <div className="flex items-center space-x-1">
                                 <span>About Us</span>
-                                <span>{isAboutClosed ? <MdOutlineKeyboardArrowUp /> : <MdOutlineKeyboardArrowDown />}</span>
+                                <span>{isAboutClosed ? <MdOutlineKeyboardArrowDown /> : <MdOutlineKeyboardArrowUp />}</span>
                             </div>
                             {isAboutClosed ? '' :
                                 <div className="z-50">
                                     <div className="relative pt-2 flex flex-col space-y-4 [&>a]:border-b [&>a]:pb-2 hover:[&>a]:border-lightBlue">
-                                        <Link onClick={() => { handleOpen(); handleHidden() }} href="/about/our-church" >Our Company</Link>
-                                        <Link onClick={() => { handleOpen(); handleHidden() }} href="/about/our-beliefs" >Our Branches</Link>
+                                        <Link onClick={() => { handleOpen(); handleHidden() }} href="/about/" >Our Company</Link>
+                                        <Link onClick={() => { handleOpen(); handleHidden() }} href="/about/" >Our Branches</Link>
                                     </div>
                                 </div>}
                         </div>
