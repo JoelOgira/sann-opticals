@@ -63,11 +63,11 @@ const ContactForm = () => {
                         type="text"
                         placeholder="Full Name"
                         name="name"
-                        className="bg-[#F5F9F9] p-4 focus:outline-none focus:bg-transparent focus:border focus:border-[#F5F9F9] rounded"
+                        className="bg-lightGrey p-4 focus:outline-none focus:bg-transparent focus:border focus:border-lightGbg-lightGrey rounded"
                         {...register('name')}
                     />
                     {errors.name && (
-                        <p className="text-red-500">{errors.name?.message}</p>
+                        <p className="text-lightRed">{errors.name?.message}</p>
                     )}
                 </div>
 
@@ -76,11 +76,11 @@ const ContactForm = () => {
                         type="email"
                         name="email"
                         placeholder="Email Address"
-                        className="bg-[#F5F9F9] p-4 focus:outline-none focus:bg-transparent focus:border focus:border-[#F5F9F9] rounded"
+                        className="bg-lightGrey p-4 focus:outline-none focus:bg-transparent focus:border focus:border-lightGbg-lightGrey rounded"
                         {...register('email')}
                     />
                     {errors.email && (
-                        <p className="text-red-500">{errors.email?.message}</p>
+                        <p className="text-lightRed">{errors.email?.message}</p>
                     )}
                 </div>
 
@@ -89,11 +89,11 @@ const ContactForm = () => {
                         type="text"
                         name="subject"
                         placeholder="Subject"
-                        className="bg-[#F5F9F9] p-4 focus:outline-none focus:bg-transparent focus:border focus:border-[#F5F9F9] rounded"
+                        className="bg-lightGrey p-4 focus:outline-none focus:bg-transparent focus:border focus:border-lightGbg-lightGrey rounded"
                         {...register('subject')}
                     />
                     {errors.subject && (
-                        <p className="text-red-500">{errors.subject?.message}</p>
+                        <p className="text-lightRed">{errors.subject?.message}</p>
                     )}
                 </div>
 
@@ -103,11 +103,11 @@ const ContactForm = () => {
                         rows="6"
                         name="message"
                         placeholder="Message"
-                        className="bg-[#F5F9F9] p-4 focus:outline-none focus:bg-transparent focus:border focus:border-[#F5F9F9] rounded"
+                        className="bg-lightGrey p-4 focus:outline-none focus:bg-transparent focus:border focus:border-lightGbg-lightGrey rounded"
                         {...register('message')}
                     ></textarea>
                     {errors.message && (
-                        <p className="text-red-500">{errors.message?.message}</p>
+                        <p className="text-lightRed">{errors.message?.message}</p>
                     )}
                 </div>
                 <ButtonSubmit type={'submit'} title={'Send Message'} />
