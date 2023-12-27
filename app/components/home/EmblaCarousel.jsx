@@ -3,6 +3,7 @@
 
 import useEmblaCarousel from 'embla-carousel-react'
 import AutoPlay from 'embla-carousel-autoplay'
+import ButtonInternal from '../ButtonInternal'
 
 export default function EmblaCarousel() {
 
@@ -14,17 +15,26 @@ export default function EmblaCarousel() {
     const [ emblaRef ] = useEmblaCarousel({ loop: true }, [ AutoPlay(autoplayOptions) ])
 
     return (
-        <section className='flex flex-col-reverse md:flex-row'>
+        <section className='flex flex-col-reverse pb-16 md:flex-row lg:pb-0'>
 
             <div className=" grid items-center px-4 md:w-1/2 lg:pl-12">
                 <div className="py-8">
-                    <h1 className="text-4xl pb-6 font-semibold lg:text-6xl">
+                    <h1 className="text-4xl text-center pb-6 font-semibold md:text-start lg:text-6xl">
                         Sann<span className="text-primary px-3"> Opticals </span> Limited
                     </h1>
-                    <h2 className='text-2xl py-6 font-semibold text-gray-900'>The best and most affordable optical shop in Mombasa and it's environs</h2>
-                    <p className="text-gray-800 leading-[1.8rem] md:max-w-md lg:max-w-2xl">
+
+                    <h2 className='text-2xl text-center pb-6 font-semibold text-gray-900 md:text-start'>The best and most affordable optical shop in Mombasa and it's environs</h2>
+
+                    <p className="text-gray-900 pb-6 leading-[1.8rem] md:max-w-md lg:max-w-2xl">
                         Your premier destination for top-quality eyewear. Experience unparalleled service, an extensive range of eyeglasses, and expert vision care.
                     </p>
+
+                    <p className="text-gray-700 pb-10 leading-[1.8rem] md:max-w-md lg:max-w-2xl">
+                        At Sann Opticals Limited, our commitment revolves around offering patients a welcoming environment paired with top-notch eye care services.
+                    </p>
+
+                    <ButtonInternal href={'/services'} title={'Explore Our  Services'} />
+
                 </div>
             </div>
 
