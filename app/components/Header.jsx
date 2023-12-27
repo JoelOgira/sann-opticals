@@ -4,8 +4,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import Image from 'next/image'
 import logo from '../../public/logo.svg'
-import { MdOutlineKeyboardArrowUp } from 'react-icons/md'
-import { MdOutlineKeyboardArrowDown } from 'react-icons/md'
+import { MdOutlineKeyboardArrowUp, MdOutlineKeyboardArrowDown, MdLocalPhone } from 'react-icons/md'
 
 export default function Header() {
 
@@ -32,7 +31,7 @@ export default function Header() {
                     <Image src={logo} alt="Site Icon" className='w-[8rem] h-[4rem]' />
                 </Link>
 
-                <div className="hidden [&>a]:font-semibold [&>div>div>span]:font-semibold [&>div>div>div>a]:font-semibold md:flex md:flex-wrap md:items-center md:justify-center space-x-5">
+                <div className="hidden [&>a]:font-semibold [&>a]:text-lg [&>div>div>span]:font-semibold [&>div>div>div>a]:font-semibold [&>div>div>div>a]:text-lg md:flex md:flex-wrap md:items-center md:justify-center space-x-5">
                     <Link href="/" className="hover:text-lightBlue">Home</Link>
                     <Link href="/services" className="hover:text-lightBlue">Services</Link>
                     <div onMouseEnter={handleAbout} onMouseLeave={handleAbout} onClick={handleAbout} className="cursor-pointer z-30">
@@ -43,13 +42,21 @@ export default function Header() {
                         {isAboutClosed ? '' :
                             <div className="z-50">
                                 <div className="bg-white absolute pr-9 pl-3 py-3 flex flex-col space-y-3 shadow-md hover:[&>a]:text-lightBlue">
-                                    <Link onClick={handleAbout} href="/about/our-church" >Our Church</Link>
+                                    <Link onClick={handleAbout} href="/about/our-church" >Our Team</Link>
                                     <Link onClick={handleAbout} href="/about/our-beliefs" >Our Beliefs</Link>
                                 </div>
                             </div>}
                     </div>
                     <Link href="/services" className="hover:text-lightBlue">Services</Link>
                     <Link href="/contact" className="hover:text-lightBlue">Contact Us</Link>
+                </div>
+
+                <div className="hidden md:flex md:space-x-2 md:items-center">
+                    <div className='text-2xl text-lightRed' ><MdLocalPhone /></div>
+                    <div className='flex flex-col space-y-1'>
+                        <p><span className='text-lightRed'>Need Help? </span>Call Us</p>
+                        <p className='font-semibold text-xl'>+254721520641</p>
+                    </div>
                 </div>
 
                 <button
