@@ -4,6 +4,7 @@ import { useState } from "react";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 import { glassCatalog, sunglassCatalog } from "./imports";
 import Image from 'next/image';
+import Jumbotron from "./Jumbotron";
 
 const Catalog = () => {
     const [ hoveredImages, setHoveredImages ] = useState({});
@@ -35,8 +36,11 @@ const Catalog = () => {
 
     return (
         <section className="w-full py-20 flex flex-col space-y-16 bg-white">
+
+            <Jumbotron />
+
             <div className="flex flex-col space-y-8">
-                <h2 className="px-4 lg:px-12 text-center font-semibold text-2xl md:text-start md:text-4xl">Explore Our Glasses Collection</h2>
+                <h2 className="px-4 text-center text-gray-700 font-semibold text-xl sm:text-2xl md:text-start md:text-4xl lg:px-12">Explore Our Glasses Collection</h2>
                 <div className="relative flex items-center">
                     <MdChevronLeft className='opacity-50 cursor-pointer hover:opacity-100' onClick={slideLeft} size={40} />
                     <div id="slider" className='w-full h-full overflow-x-scroll whitespace-nowrap scroll-smooth'>
@@ -65,7 +69,7 @@ const Catalog = () => {
             </div>
 
             <div className="flex flex-col space-y-8">
-                <h2 className="px-4 lg:px-12 text-center font-semibold text-2xl md:text-start md:text-4xl">Explore Our Sunglass Collection</h2>
+                <h2 className="px-4 text-center text-gray-700 font-semibold text-xl sm:text-2xl md:text-start md:text-4xl lg:px-12">Explore Our Sunglasses Collection</h2>
                 <div className="relative flex items-center">
                     <MdChevronLeft className='opacity-50 cursor-pointer hover:opacity-100' onClick={slideLeft} size={40} />
                     <div id="slider" className='w-full h-full overflow-x-scroll whitespace-nowrap scroll-smooth'>
