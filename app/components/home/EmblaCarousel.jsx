@@ -17,13 +17,13 @@ export default function EmblaCarousel() {
     return (
         <section className='flex flex-col-reverse pb-16 md:flex-row lg:pb-0'>
 
-            <div className=" grid items-center px-4 md:w-1/2 lg:pl-12">
+            <div className="animateBottom grid items-center px-4 md:animateLeft md:w-1/2 lg:pl-12">
                 <div className="py-8">
-                    <h1 className="text-4xl text-center pb-6 font-semibold md:text-start lg:text-6xl">
+                    <h1 className="text-3xl text-center pb-6 font-serif font-semibold md:text-start lg:text-6xl">
                         Sann<span className="text-primary px-3"> Opticals </span> Limited
                     </h1>
 
-                    <h2 className='text-2xl text-center pb-6 font-semibold text-gray-900 md:text-start'>The best and most affordable optical shop in Mombasa and it's environs</h2>
+                    <h2 className='text-xl text-center pb-6 font-semibold text-gray-900 md:text-start'>The best and most affordable optical shop in Mombasa and it's environs</h2>
 
                     <p className="text-gray-900 pb-6 leading-[1.8rem] md:max-w-md lg:max-w-2xl">
                         Your premier destination for top-quality eyewear. Experience unparalleled service, an extensive range of eyeglasses, and expert vision care.
