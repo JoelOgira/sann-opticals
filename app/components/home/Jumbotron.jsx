@@ -12,7 +12,7 @@ const Jumbotron = () => {
     ]
 
     return (
-        <div className='w-full flex items-center justify-between space-x-4 px-4 py-10 sm:space-x-0 lg:px-24'>
+        <div className='w-full flex items-center justify-between space-x-8 px-4 py-10 sm:space-x-0 lg:px-24'>
             {tronData.map(data => (
                 <div key={data.id} className="flex flex-col">
                     <Image
