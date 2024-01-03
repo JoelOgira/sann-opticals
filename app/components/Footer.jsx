@@ -56,11 +56,11 @@ const Footer = () => {
               </div>
 
               <div className='flex flex-col space-y-3'>
-                <p className='text-xl font-semibold pb-4' >Quick Links</p>
-                <Link href={'/about'}>About</Link>
-                <Link href={'/services'}>Services</Link>
-                <Link href={'/services'}>Products</Link>
-                <Link href={'/contact'}>Contact</Link>
+                <p className='text-xl font-semibold pb-4' >Our Services</p>
+                <Link href={'/services'}>Eye Exam</Link>
+                <Link href={'/services'}>Glass Prescription</Link>
+                <Link href={'/services'}>Low vision aid</Link>
+                <Link href={'/services'}>Sunglasses</Link>
               </div>
 
               <div className='flex flex-col space-y-3'>
