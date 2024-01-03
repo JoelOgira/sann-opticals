@@ -19,7 +19,7 @@ const Jumbotron = () => {
                         src={data.img}
                         alt={data.img.toString()}
                     />
-                    <p className='max-w-md text-sm text-gray-800' >{data.description}</p>
+                    <p className='max-w-xs text-sm text-gray-800 sm:pr-5 lg:pr-0' >{data.description}</p>
                 </div>
             ))}
         </div>
