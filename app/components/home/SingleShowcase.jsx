@@ -6,7 +6,7 @@ const SingleShowcase = ({ title, description, img }) => {
             <div className="flex flex-col-reverse md:flex-row md:space-x-8">
                 <div className="grid items-center md:w-1/2">
                     <div className="animateLeft flex flex-col justify-center items-center space-y-7 text-center md:justify-start md:items-start md:text-start">
-                        <h3 className='max-w-xs font-thin font-serif text-2xl text-center md:max-w-lg md:text-start md:text-5xl'>{title}</h3>
+                        <h3 className='max-w-xs font-semibold font-serif text-4xl text-center md:max-w-xl md:text-start lg:text-7xl'>{title}</h3>
 
                         <p className='leading-8 text-gray-700 lg:max-w-md'>{description}</p>
                     </div>
