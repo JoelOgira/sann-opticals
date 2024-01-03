@@ -25,20 +25,20 @@ export default function Showcase() {
                 <div className="flex">
 
                     <SingleShowcase
-                        title={'An easy way to choose the prefect lenses for your frame!'}
+                        title={'An easy way to choose the perfect lenses for your frame!'}
                         description={'Visit us in any of our locations today in order to receive guidance from our experts about the most suitable lens for you.'}
                         img={scroll1}
                     />
 
                     <SingleShowcase
                         title={'For every vision need'}
-                        description={"Whether you're nearsighted or farsighted we have quality lenses to suit you needs. You can choose blue-violet light filter for digital devices, light adaptive lenses and thin option for strong prescriptions"}
+                        description={"Whether you're nearsighted or farsighted we have quality lenses to suit you needs. You can choose blue-violet light filter for digital devices, light adaptive lenses and thin option for strong prescriptions."}
                         img={scroll2}
                     />
 
                     <SingleShowcase
                         title={"Let us guide you"}
-                        description={"We'll recommend the right lens for you based on your prescription and reach out directly to verify any information you provide. You can also chat with our lens experts whenever your need"}
+                        description={"We'll recommend the right lens for you based on your prescription and reach out directly to verify any information you provide. You can also chat with our lens experts whenever your need."}
                         img={scroll3}
                     />
 
