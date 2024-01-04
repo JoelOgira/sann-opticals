@@ -38,7 +38,7 @@ const Faq = () => {
                         setState={setIsHidden1}
                         number={"02."}
                         title={"How long does an eye exam take?"}
-                        description={"An eye checkup typically takes between  30 minutes. The duration of your checkup depends on your symptoms, the tests conducted, your vision history, and any prevalent medical conditions. A routine eye checkup can sometimes be as quick as 15 minutes, while comprehensive checks can take over an hour. The appointment covers assessing the visual acuity, updating prescriptions, suggesting contacts or glasses, and looking for any underlying chronic health conditions."}
+                        description={"An eye checkup typically takes 30 minutes. The duration of your checkup depends on your symptoms, the tests conducted, your vision history, and any prevalent medical conditions. A routine eye checkup can sometimes be as quick as 15 minutes, while comprehensive checks can take over an hour. The appointment covers assessing the visual acuity, updating prescriptions, suggesting glasses, and looking for any underlying chronic health conditions."}
                     />
 
                     <SingleFaq
