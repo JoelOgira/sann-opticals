@@ -43,7 +43,7 @@ const Locations = () => {
         <p className="flex space-x-3 items-center pt-5">
           <span> <GiPostOffice className='text-xl text-brightRed' /> </span>
           <span>
-            Box 42825 - 80100, Mombasa
+            P.O.Box 42825 - 80100, Mombasa
           </span>
         </p>
 
