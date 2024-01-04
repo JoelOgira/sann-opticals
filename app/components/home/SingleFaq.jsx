@@ -11,7 +11,7 @@ const SingleFaq = ({ state, setState, number, title, description }) => {
                 <div className={` ${state ? 'text-black' : 'text-lightRed'} flex items-center`}>{state ? <p className="border-black"><LuBadgePlus className='text-xl' /></p> : <p className="border-lightRed"><LuBadgeMinus className='text-xl' /></p>}</div>
             </div>
 
-            <div className="pl-16">
+            <div className="pl-14">
                 <p className={`${state ? 'hidden' : 'block'} text-[#666666] max-w-lg`}>{description}</p>
             </div>
         </div>
