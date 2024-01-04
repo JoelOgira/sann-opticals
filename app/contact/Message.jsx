@@ -5,8 +5,8 @@ import { MdFacebook } from 'react-icons/md'
 
 const Message = () => {
     return (
-        <div className="w-full bg-white flex flex-col space-y-5 sm:flex-row sm:space-x-3 sm:space-y-0">
-            <div className="flex flex-col space-y-6 sm:py-24 px-4 sm:w-1/3 lg:px-12">
+        <div className="w-full bg-white flex flex-col space-y-5 md:flex-row md:space-x-3 md:space-y-0">
+            <div className="flex flex-col space-y-6 md:py-24 px-4 md:w-1/3 lg:px-12">
                 <h2 className="text-primary flex items-center space-x-3 font-semibold pb-5">
                     <span> <IoShareSocialOutline className='text-lg' /> </span>
                     <span>SOCIAL LINKS</span>
@@ -18,7 +18,7 @@ const Message = () => {
                 <Link className='flex items-center space-x-4 text-xl' href={'https://www.facebook.com/people/SANN-Opticals/100057699240184/'} target='_blank'> <span>Facebook</span> <span className="border border-brightRed rounded-full p-1"><MdFacebook className='text-xl text-brightRed' /></span> </Link>
             </div>
 
-            <div className="px-4 py-12 sm:w-2/3 sm:py-24 lg:px-12">
+            <div className="px-4 py-12 md:w-2/3 md:py-24 lg:px-12">
                 <ContactForm />
             </div>
         </div>
