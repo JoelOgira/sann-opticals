@@ -17,7 +17,7 @@ export default function EmblaCarousel() {
     return (
         <section className='flex flex-col-reverse pb-16 md:flex-row lg:pb-0'>
 
-            <div className="animateBottom grid items-center px-4 md:animateLeft md:w-1/2 lg:pl-12">
+            <div className="animateLeft grid items-center px-4 md:w-1/2 lg:pl-12">
                 <div className="py-8">
                     <h1 className="text-3xl text-center pb-6 font-serif font-semibold md:text-start lg:text-6xl">
                         Sann<span className="text-primary px-3"> Opticals </span> Limited
