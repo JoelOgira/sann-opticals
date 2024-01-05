@@ -1,7 +1,7 @@
 "use client"
 
 import { useForm } from 'react-hook-form'
-import { object, string, number } from 'yup'
+import { object, string, number, date } from 'yup'
 import { yupResolver } from '@hookform/resolvers/yup'
 import ButtonSubmit from '../ButtonSubmit'
 // import * as yup from 'yup'
@@ -18,6 +18,7 @@ const AppointmentForm = () => {
         phone: number().required('Enter a valid phone number'),
         service: string().required('Choose a Service'),
         other: string(),
+        date: date("Enter correct date"),
         location: string().required('Choose a Location'),
     });
 
@@ -145,6 +146,19 @@ const AppointmentForm = () => {
                     </select>
                     {errors.location && (
                         <p className="text-lightRed">{errors.location?.message}</p>
+                    )}
+                </div>
+
+                <div className="flex flex-col space-y-1">
+                    <input
+                        type="date"
+                        name="date"
+                        placeholder="Choose date"
+                        Write us a Message className="bg-[#F5F9F9] p-4 focus:outline-none focus:bg-transparent focus:border focus:border-[#F5F9F9] rounded"
+                        {...register('date')}
+                    />
+                    {errors.date && (
+                        <p className="text-lightRed">{errors.date?.message}</p>
                     )}
                 </div>
 
