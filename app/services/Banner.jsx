@@ -2,8 +2,8 @@
 const Banner = () => {
     return (
         <div className="flex flex-col-reverse md:flex-row">
-            <div className="animateLeft grid items-center text-center px-4 sm:text-start md:w-1/2 lg:pl-12">
-                <div className="flex flex-col space-y-5">
+            <div className="animateLeft grid items-center px-4 md:w-1/2 lg:pl-12">
+                <div className="flex flex-col py-8 space-y-5">
                     <h1 className="text-3xl tracking-wide font-semibold lg:text-6xl">
                         <span>Explore Our</span>
                         <span className="text-primary px-3">Services</span>
