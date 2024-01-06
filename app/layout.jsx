@@ -1,9 +1,9 @@
-import { Inter } from 'next/font/google'
+import { Roboto_Condensed } from 'next/font/google'
 import './globals.css'
 import Footer from './components/Footer'
 import Header from './components/Header'
 
-const inter = Inter({ subsets: [ 'latin' ] })
+const roboto = Roboto_Condensed({ subsets: [ 'latin' ] })
 
 export const metadata = {
   title: 'Sann Opticals Limited',
@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className}`} >
+      <body className={`${roboto.className}`} >
         <Header />
         {children}
         <Footer />
