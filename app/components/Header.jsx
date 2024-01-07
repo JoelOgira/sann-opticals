@@ -34,7 +34,8 @@ export default function Header() {
                 <div className="hidden [&>a]:font-semibold [&>div>div>span]:font-semibold [&>div>div>div>a]:font-semibold [&>div>div>div>a]:text-lg md:flex md:flex-wrap md:items-center md:justify-center space-x-5">
                     <Link href="/" className="hover:text-lightBlue">Home</Link>
                     <Link href="/services" className="hover:text-lightBlue">Services</Link>
-                    <div onMouseEnter={handleAbout} onMouseLeave={handleAbout} onClick={handleAbout} className="cursor-pointer z-30">
+                    <Link href="/about" className="hover:text-lightBlue">About</Link>
+                    {/* <div onMouseEnter={handleAbout} onMouseLeave={handleAbout} onClick={handleAbout} className="cursor-pointer z-30">
                         <div className="hover:text-lightBlue flex items-center space-x-1">
                             <span>About Us</span>
                             <span>{isAboutClosed ? <MdOutlineKeyboardArrowDown /> : <MdOutlineKeyboardArrowUp />}</span>
@@ -46,7 +47,7 @@ export default function Header() {
                                     <Link onClick={handleAbout} href="/about/our-beliefs" >Our Beliefs</Link>
                                 </div>
                             </div>}
-                    </div>
+                    </div> */}
                     <Link href="/contact" className="hover:text-lightBlue">Contact Us</Link>
                 </div>
 
@@ -75,8 +76,9 @@ export default function Header() {
                 <div id="menu" className={`flex-col ${isHidden ? 'hidden' : 'flex'} absolute place-items-start self-end py-8 bg-white bg-opacity-95 sm:w-auto sm:self-center left-0 right-0 drop-shadow-md`}>
                     <div className="mr-auto flex flex-col space-y-6 pl-4">
                         <Link onClick={() => { handleOpen(); handleHidden() }} href="/">Home</Link>
-                        <Link onClick={() => { handleOpen(); handleHidden() }} href="/services" className="hover:text-lightBlue">Services</Link>
-                        <div onClick={handleAbout} className="cursor-pointer">
+                        <Link onClick={() => { handleOpen(); handleHidden() }} href="/services">Services</Link>
+                        <Link onClick={() => { handleOpen(); handleHidden() }} href="/about">About</Link>
+                        {/* <div onClick={handleAbout} className="cursor-pointer">
                             <div className="flex items-center space-x-1">
                                 <span>About Us</span>
                                 <span>{isAboutClosed ? <MdOutlineKeyboardArrowDown /> : <MdOutlineKeyboardArrowUp />}</span>
@@ -88,7 +90,7 @@ export default function Header() {
                                         <Link onClick={() => { handleOpen(); handleHidden() }} href="/about/" >Our Branches</Link>
                                     </div>
                                 </div>}
-                        </div>
+                        </div> */}
                         <Link onClick={() => { handleOpen(); handleHidden() }} href="/contact">Contact Us</Link>
                     </div>
                 </div>
