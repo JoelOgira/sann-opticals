@@ -1,9 +1,10 @@
+import Banner from "./Banner"
 
 
 const About = () => {
   return (
     <main>
-        About
+      <Banner />
     </main>
   )
 }
