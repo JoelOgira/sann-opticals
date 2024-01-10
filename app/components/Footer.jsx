@@ -10,7 +10,7 @@ const Footer = () => {
     <footer className="top-full sticky">
       <div className="flex flex-col lg:flex-row text-white">
 
-        <div className="bg-primary px-4 py-10 lg:px-12 lg:w-1/3 lg:py-20">
+        <div className="bg-deepBlue px-4 py-10 lg:px-12 lg:w-1/3 lg:py-20">
           <div className="">
             <h4 className="text-2xl font-bold pb-6">
               Sann Opticals limited
@@ -66,7 +66,7 @@ const Footer = () => {
               <div className='flex flex-col space-y-3'>
                 <p className='text-xl font-semibold pb-4' >Social Links</p>
                 <p>Follow Us</p>
-                <Link className='flex flex-row items-center space-x-4' href={'https://www.facebook.com/people/SANN-Opticals/100057699240184/'} target='_blank'> <span>Facebook</span> <span><MdFacebook className='text-xl text-primary' /></span> </Link>
+                <Link className='flex flex-row items-center space-x-4' href={'https://www.facebook.com/people/SANN-Opticals/100057699240184/'} target='_blank'> <span>Facebook</span> <span><MdFacebook className='text-xl text-deepbg-deepBlue' /></span> </Link>
               </div>
             </div>
           </div>
