@@ -5,7 +5,7 @@ const EyeExam = () => {
         <div className="bg-white px-4 py-16 md:py-20 lg:px-12">
             <div className="flex flex-col space-y-8 py-8 lg:flex-row lg:space-y-0 lg:space-x-5">
                 <div className="lg:w-1/2">
-                    <h2 className="uppercase text-lightRed text-2xl md:text-4xl font-serif lg:text-6xl " >How often should<br /> you get an eye <br /> exam?</h2>
+                    <h2 className="uppercase text-lightRed text-2xl md:text-4xl  lg:text-6xl " >How often should<br /> you get an eye <br /> exam?</h2>
                 </div>
                 <div className="lg:w-1/2">
                     <div className="flex flex-col space-y-5">
@@ -29,7 +29,7 @@ const EyeExam = () => {
 
             <div className="flex flex-col space-y-8 py-8 lg:flex-row lg:space-y-0 lg:space-x-5">
                 <div className="lg:w-1/2">
-                    <h2 className="uppercase text-lightRed text-2xl md:text-4xl font-serif lg:text-6xl " >What happens  <br />during an eye <br /> exam?</h2>
+                    <h2 className="uppercase text-lightRed text-2xl md:text-4xl lg:text-6xl " >What happens  <br />during an eye <br /> exam?</h2>
                 </div>
                 <div className="lg:w-1/2">
                     <div className="flex flex-col space-y-5">
@@ -88,7 +88,7 @@ const EyeExam = () => {
 
                 <div className="pb-8 lg:pl-20 lg:pb-0 lg:w-1/2">
                     <div className="flex flex-col space-y-5 lg:[&>p]:max-w-3xl">
-                        <h2 className="uppercase text-lightRed text-2xl md:text-4xl font-serif lg:text-6xl " > Computerized eye exam </h2>
+                        <h2 className="uppercase text-lightRed text-2xl md:text-4xl  lg:text-6xl " > Computerized eye exam </h2>
                         <p className="leading-6">
                             New precision technology has improved eye exams by giving you and your doctor a more complete picture of your eye health. For many eye doctors, advanced diagnostics have replaced older eye test methods.
                         </p>
