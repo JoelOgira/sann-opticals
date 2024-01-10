@@ -54,7 +54,7 @@ const EyeExam = () => {
             <div className="flex flex-col space-y-8 py-8 lg:flex-row lg:space-y-0 lg:space-x-5">
                 <div className="lg:w-1/2">
                     <div className="flex flex-col space-y-5 lg:[&>p]:max-w-3xl">
-                        <h2 className="uppercase text-lightRed text-2xl md:text-4xl font-serif lg:text-6xl " >What can an eye<br />exam detect?</h2>
+                        <h2 className="uppercase text-lightRed text-2xl md:text-4xl lg:text-6xl " >What can an eye<br />exam detect?</h2>
                         <p className="leading-6">
                             The eye is one of the few places in the body where blood vessels are clearly visible. Because of this, eye doctors can check for common diseases that often appear in the eye first, such as diabetes and high blood pressure.
                         </p>
