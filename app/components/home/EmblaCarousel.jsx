@@ -20,7 +20,7 @@ export default function EmblaCarousel() {
             <div className="animateLeft grid items-center px-4 md:w-1/2 lg:pl-12">
                 <div className="py-8">
                     <h1 className="text-3xl text-center pb-6 font-semibold md:text-start lg:text-6xl">
-                        Sann<span className="text-primary px-3"> Opticals </span> Limited
+                        Sann<span className="text-primary px-1 md:px-3"> Opticals </span> Limited
                     </h1>
 
                     <h2 className='text-xl text-center pb-6 font-semibold text-gray-900 md:text-start'>The best and most affordable optical shop in Mombasa and it's environs</h2>
