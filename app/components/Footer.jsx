@@ -66,7 +66,7 @@ const Footer = () => {
               <div className='flex flex-col space-y-3'>
                 <p className='text-xl font-semibold pb-4' >Social Links</p>
                 <p>Follow Us</p>
-                <Link className='flex flex-row items-center space-x-4' href={'https://www.facebook.com/people/SANN-Opticals/100057699240184/'} target='_blank'> <span>Facebook</span> <span><MdFacebook className='text-xl text-deepbg-deepBlue' /></span> </Link>
+                <Link className='flex flex-row items-center space-x-4' href={'https://www.facebook.com/people/SANN-Opticals/100057699240184/'} target='_blank'> <span>Facebook</span> <span><MdFacebook className='text-xl text-deepBlue' /></span> </Link>
               </div>
             </div>
           </div>
