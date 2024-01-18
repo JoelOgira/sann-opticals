@@ -34,20 +34,24 @@ export default function Header() {
                 <div className="hidden [&>a]:font-semibold [&>div>div>span]:font-semibold [&>div>div>div>a]:font-semibold [&>div>div>div>a]:text-lg md:flex md:flex-wrap md:items-center md:justify-center space-x-5">
                     <Link href="/" className="hover:text-lightBlue">Home</Link>
                     <Link href="/services" className="hover:text-lightBlue">Services</Link>
-                    <Link href="/about" className="hover:text-lightBlue">About</Link>
-                    {/* <div onMouseEnter={handleAbout} onMouseLeave={handleAbout} onClick={handleAbout} className="cursor-pointer z-30">
+                    {/* <Link href="/about" className="hover:text-lightBlue">About</Link> */}
+                    <div onMouseEnter={handleAbout} onMouseLeave={handleAbout} onClick={handleAbout} className="cursor-pointer z-30">
                         <div className="hover:text-lightBlue flex items-center space-x-1">
-                            <span>About Us</span>
+                            <span>Branches</span>
                             <span>{isAboutClosed ? <MdOutlineKeyboardArrowDown /> : <MdOutlineKeyboardArrowUp />}</span>
                         </div>
                         {isAboutClosed ? '' :
                             <div className="z-50">
                                 <div className="bg-white absolute pr-9 pl-3 py-3 flex flex-col space-y-3 shadow-md hover:[&>a]:text-lightBlue">
-                                    <Link onClick={handleAbout} href="/about/our-church" >Our Team</Link>
-                                    <Link onClick={handleAbout} href="/about/our-beliefs" >Our Beliefs</Link>
+                                    <Link onClick={handleAbout} href="/branches/mombasa" >Mombasa Branch</Link>
+                                    <Link onClick={handleAbout} href="/branches/taveta" >Taveta Branch</Link>
+                                    <Link onClick={handleAbout} href="/branches/kilifi" >Kilifi Branch</Link>
+                                    <Link onClick={handleAbout} href="/branches/hola" >Hola Branch</Link>
+                                    <Link onClick={handleAbout} href="/branches/voi" >Voi Branch</Link>
+                                    <Link onClick={handleAbout} href="/branches/mpeketoni" >Mpeketoni Branch</Link>
                                 </div>
                             </div>}
-                    </div> */}
+                    </div>
                     <Link href="/contact" className="hover:text-lightBlue">Contact Us</Link>
                 </div>
 
@@ -77,20 +81,25 @@ export default function Header() {
                     <div className="mr-auto flex flex-col space-y-6 pl-4">
                         <Link onClick={() => { handleOpen(); handleHidden() }} href="/">Home</Link>
                         <Link onClick={() => { handleOpen(); handleHidden() }} href="/services">Services</Link>
-                        <Link onClick={() => { handleOpen(); handleHidden() }} href="/about">About</Link>
-                        {/* <div onClick={handleAbout} className="cursor-pointer">
+                        {/* <Link onClick={() => { handleOpen(); handleHidden() }} href="/about">About</Link> */}
+                        <div onClick={handleAbout} className="cursor-pointer">
                             <div className="flex items-center space-x-1">
-                                <span>About Us</span>
+                                <span>Branches</span>
                                 <span>{isAboutClosed ? <MdOutlineKeyboardArrowDown /> : <MdOutlineKeyboardArrowUp />}</span>
                             </div>
                             {isAboutClosed ? '' :
                                 <div className="z-50">
-                                    <div className="relative pt-2 flex flex-col space-y-4 [&>a]:border-b [&>a]:pb-2 hover:[&>a]:border-lightBlue">
-                                        <Link onClick={() => { handleOpen(); handleHidden() }} href="/about/" >Our Company</Link>
-                                        <Link onClick={() => { handleOpen(); handleHidden() }} href="/about/" >Our Branches</Link>
+                                    <div className="relative shadow-md pt-2 flex flex-col space-y-4 [&>a]:border-b [&>a]:pb-2 hover:[&>a]:border-lightBlue">
+                                        <Link onClick={() => { handleOpen(); handleHidden() }} href="/branches/mombasa" >Mombasa Branch</Link>
+                                        <Link onClick={() => { handleOpen(); handleHidden() }} href="/branches/taveta" >Taveta Branch</Link>
+                                        <Link onClick={() => { handleOpen(); handleHidden() }} href="/branches/kilifi" >Kilifi Branch</Link>
+                                        <Link onClick={() => { handleOpen(); handleHidden() }} href="/branches/hola" >Hola Branch</Link>
+                                        <Link onClick={() => { handleOpen(); handleHidden() }} href="/branches/voi" >Voi Branch</Link>
+                                        <Link onClick={() => { handleOpen(); handleHidden() }} href="/branches/mpeketoni" >Mpeketoni Branch</Link>
                                     </div>
-                                </div>}
-                        </div> */}
+                                </div>
+                            }
+                        </div>
                         <Link onClick={() => { handleOpen(); handleHidden() }} href="/contact">Contact Us</Link>
                     </div>
                 </div>
