@@ -2,7 +2,7 @@
 
 const EyeExam = () => {
     return (
-        <div className="bg-white px-4 py-16 md:py-20 lg:px-12">
+        <div className="bg-white px-4 py-10 md:py-20 lg:px-12">
             <div className="flex flex-col space-y-8 py-8 lg:flex-row lg:space-y-0 lg:space-x-5">
                 <div className="lg:w-1/2">
                     <h2 className="uppercase text-lightRed text-2xl md:text-4xl  lg:text-5xl " >How often should<br /> you get an eye <br /> exam?</h2>
@@ -40,7 +40,7 @@ const EyeExam = () => {
                             If your visual acuity is not 20/20 (what’s considered “good” or “average” vision), your eye doctor will test for Common eye conditions. Common refractive errors include myopia (nearsightedness), hyperopia (farsightedness) and astigmatism.
                         </p>
                         <p className="leading-6">
-                            Your eye doctor will also conduct a series of tests designed to catch certain eye conditions and diseases. Sann Opticals offers the digital eye exam that helps eye doctors pinpoint eye changes over time.
+                            Your eye doctor will also conduct a series of tests designed to catch certain eye conditions and diseases. Babs Optical offers the digital eye exam that helps eye doctors pinpoint eye changes over time.
                         </p>
                         <p className="leading-6">
                             Specific eye exams can be done for people who have a pre-existing condition, such as diabetes. A diabetic eye exam pays special attention to the health of the retina and other parts of the eye that diabetes can affect. People with diabetes are 60% more likely to develop cataracts, which makes regular diabetic eye exams even more critical.
@@ -93,7 +93,7 @@ const EyeExam = () => {
                             New precision technology has improved eye exams by giving you and your doctor a more complete picture of your eye health. For many eye doctors, advanced diagnostics have replaced older eye test methods.
                         </p>
                         <p className="leading-6">
-                            Here is some of the innovative technology you can look forward to at your next Sann Opticals eye exam:
+                            Here is some of the innovative technology you can look forward to at your next Babs Optical eye exam:
                         </p>
                         <p className="leading-6">
                             <span className="font-semibold">VISION PROFILER.</span>    This tool provides a detailed visual profile that’s like a fingerprint for your eye. It can even detect the differences in how your eye sees in daylight versus at nighttime.
