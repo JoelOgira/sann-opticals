@@ -101,6 +101,14 @@ export default function Header() {
                             }
                         </div> */}
                         <Link onClick={() => { handleOpen(); handleHidden() }} href="/contact">Contact Us</Link>
+
+                        <div className="md:hidden flex space-x-1 items-center border rounded-md p-1">
+                            <div className='text-xl text-lightRed' ><MdLocalPhone /></div>
+                            <div className='flex flex-col space-y-[0.125rem] text-sm'>
+                                <p><span className='text-lightRed'>Need Help? </span>Call Us</p>
+                                <p className='font-semibold text-xl'>+254721520641</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
