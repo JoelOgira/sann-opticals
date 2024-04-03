@@ -55,7 +55,7 @@ export default function Header() {
                     <Link href="/contact" className="hover:text-lightBlue">Contact Us</Link>
                 </div>
 
-                <div className="hidden md:flex md:space-x-2 md:items-center">
+                <div className="hidden md:flex md:space-x-2 md:items-center border rounded-md">
                     <div className='text-2xl text-lightRed' ><MdLocalPhone /></div>
                     <div className='flex flex-col space-y-1'>
                         <p><span className='text-lightRed'>Need Help? </span>Call Us</p>
